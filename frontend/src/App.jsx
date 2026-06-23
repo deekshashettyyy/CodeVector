@@ -3,7 +3,7 @@ import axios from "axios";
 import ProductCard from "./components/ProductCard.jsx";
 import "./App.css";
 
-const BASE_URL = "http://localhost:5000/api/v1/products";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 function App() {
 
