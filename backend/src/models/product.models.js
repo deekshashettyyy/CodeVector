@@ -22,4 +22,17 @@ const productSchema = new mongoose.Schema(
     }
 );
 
+// w/o category
+productSchema.index({
+    createdAt: -1,
+    _id: -1
+});
+
+// with category
+productSchema.index({
+    category: 1,
+    createdAt: -1,
+    _id: -1
+});
+
 export const Product = mongoose.model("Product", productSchema)

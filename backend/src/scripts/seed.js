@@ -1,5 +1,6 @@
 import { Product } from "../models/product.models.js";
 import connectDB from "../config/db.js";
+import mongoose from "mongoose";
 
 const seedProducts = async () => {
 
@@ -50,6 +51,7 @@ const seedProducts = async () => {
             {
                 // insert in mongo as [] = 5000
                 await Product.insertMany(products);
+                console.log(`${i} products inserted...`);
                 
                 //clear array
                 products.length = 0;
@@ -60,7 +62,9 @@ const seedProducts = async () => {
         if(products.length > 0)
         {
             await Product.insertMany(products);
-        }       
+        }   
+        
+        console.log("Seeding completed successfully!");
     } 
     catch(error)
     {
