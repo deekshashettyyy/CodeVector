@@ -242,8 +242,6 @@ VITE_API_URL=
 
 ## Screenshots
 
-Add screenshots here:
-
 ### Home Page
 ![Home](assets/Home.png)
 
