@@ -52,17 +52,7 @@ function App() {
                 <div className="count">
                     Showing {products.length} products
                 </div>
-
-                <select
-                    value={category}
-                    onChange={(e)=>{
-                        setNextCursor(null);
-                        setCategory(e.target.value);
-                    }}
-                >
-                    ...
-                </select>
-
+                
             </div>
 
             <select
