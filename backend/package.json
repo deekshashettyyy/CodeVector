@@ -5,10 +5,10 @@
   "main": "index.js",
   "type" : "module",
   "scripts": {
-    "node" : "node -r dotenv/config src/server.js",
+    "start" : "node -r dotenv/config src/server.js",
     "dev" : "nodemon -r dotenv/config src/server.js",
-    "seed" : "nodemon -r dotenv/config src/scripts/seed.js",
-    "addProducts" : "nodemon -r dotenv/config src/scripts/addProducts.js"
+    "seed" : "node -r dotenv/config src/scripts/seed.js",
+    "addProducts" : "node -r dotenv/config src/scripts/addProducts.js"
   },
   "author": "Deeksha Shetty",
   "license": "ISC",
