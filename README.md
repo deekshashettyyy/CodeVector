@@ -7,6 +7,8 @@ A full-stack product browsing application built as part of the CodeVector Labs B
 ## Live Demo
 https://code-vector-xi.vercel.app
 
+Note: The backend is hosted on a free Render instance. If the application has been inactive, the first request may take 30–40 seconds due to server cold starts. After the server wakes up, the application responds normally.
+
 ---
 
 ## Features
@@ -216,7 +218,7 @@ Backend
 
 ```
 PORT=
-MONGODB_URI=
+MONGODB_URL=
 CORS_ORIGIN=
 ```
 
@@ -244,6 +246,9 @@ VITE_API_URL=
 
 ### Home Page
 ![Home](assets/Home.png)
+
+### Category
+![Load More](assets/Category.png)
 
 ### Load More
 ![Load More](assets/LoadMore.png)
